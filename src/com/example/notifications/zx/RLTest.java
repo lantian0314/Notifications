@@ -1,9 +1,13 @@
 package com.example.notifications.zx;
 
+import com.example.notifications.R;
+
 import android.app.Activity;
 import android.os.Bundle;
+import android.provider.ContactsContract.CommonDataKinds.Relation;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.RelativeLayout;
 
 public class RLTest extends Activity {
@@ -12,11 +16,13 @@ public class RLTest extends Activity {
 	private static final int ID_button2 = 2;
 	private static final int ID_button3 = 3;
 	private static final int ID_button4 = 4;
+	private static final int ID_image = 5;
 	private RelativeLayout relativeLayout;
 	private Button button1;
 	private Button button2;
 	private Button button3;
 	private Button button4;
+	private ImageView imageView;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -64,8 +70,19 @@ public class RLTest extends Activity {
 				ViewGroup.LayoutParams.WRAP_CONTENT);
 		// btn4 位于 btn2 的下方，在父 Veiw 中水平居中 
 		LP4.addRule(RelativeLayout.BELOW, ID_button2);
+		//在父布局中水平居中
 		LP4.addRule(RelativeLayout.CENTER_HORIZONTAL, RelativeLayout.TRUE);
 		relativeLayout.addView(button4, LP4);
+		
+		imageView = new ImageView(this);
+		imageView.setImageResource(R.drawable.icon);
+		imageView.setId(ID_image);
+		RelativeLayout.LayoutParams LP5= new RelativeLayout.LayoutParams(
+				ViewGroup.LayoutParams.WRAP_CONTENT,
+				ViewGroup.LayoutParams.WRAP_CONTENT);
+		LP5.addRule(RelativeLayout.BELOW, ID_button4);
+		LP5.addRule(RelativeLayout.ALIGN_LEFT, ID_button4);
+		relativeLayout.addView(imageView, LP5);
 		
 		setContentView(relativeLayout);
 	}

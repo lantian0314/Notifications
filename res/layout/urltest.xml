@@ -3,30 +3,53 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical" >
-    
-    <ImageView 
+
+    <ImageView
         android:id="@+id/urlImag"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/ic_launcher"
-        android:visibility="visible"
-        />
+        android:visibility="visible" />
 
-    <Button 
-         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="发送GET请求"
+    <Button
         android:id="@+id/get"
-        />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="发送GET请求" />
+
+    <Button
+        android:id="@+id/post"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="发送POST请求" />
+
+    <EditText
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black" >
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/download_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
     <Button 
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="发送POST请求"
-        android:id="@+id/post"
+        android:text="下载"
+   		android:id="@+id/download_btn"
         />
-    <EditText 
-         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/text"
-        />
+
+    <ProgressBar
+        android:id="@+id/download_pb"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    
 </LinearLayout>

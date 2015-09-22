@@ -30,13 +30,13 @@ public final class R {
         public static final int sing_icon=0x7f020006;
     }
     public static final class id {
-        public static final int action_settings=0x7f080023;
+        public static final int action_settings=0x7f080026;
         public static final int btn_bigstyle_show=0x7f080004;
         public static final int btn_clear=0x7f080008;
         public static final int btn_clear_all=0x7f080009;
-        public static final int btn_custom_next=0x7f08001c;
-        public static final int btn_custom_play=0x7f08001b;
-        public static final int btn_custom_prev=0x7f08001a;
+        public static final int btn_custom_next=0x7f08001f;
+        public static final int btn_custom_play=0x7f08001e;
+        public static final int btn_custom_prev=0x7f08001d;
         public static final int btn_download_cancel=0x7f08000f;
         public static final int btn_download_pause=0x7f08000e;
         public static final int btn_download_start=0x7f08000d;
@@ -49,22 +49,25 @@ public final class R {
         public static final int btn_show_intent_apk=0x7f080007;
         public static final int btn_show_progress=0x7f08000a;
         public static final int btn_show_un_progress=0x7f08000b;
-        public static final int custom_icon=0x7f080014;
-        public static final int custom_progress_icon=0x7f08001f;
-        public static final int custom_progressbar=0x7f080022;
-        public static final int custom_song_icon=0x7f080018;
+        public static final int custom_icon=0x7f080017;
+        public static final int custom_progress_icon=0x7f080022;
+        public static final int custom_progressbar=0x7f080025;
+        public static final int custom_song_icon=0x7f08001b;
+        public static final int download_btn=0x7f080015;
+        public static final int download_edit=0x7f080014;
+        public static final int download_pb=0x7f080016;
         public static final int get=0x7f080011;
-        public static final int ll_custom_button=0x7f080019;
+        public static final int ll_custom_button=0x7f08001c;
         public static final int onclick=0x7f080000;
         public static final int post=0x7f080012;
         public static final int text=0x7f080013;
-        public static final int tv_custom_content=0x7f080017;
-        public static final int tv_custom_progress_status=0x7f080021;
-        public static final int tv_custom_progress_title=0x7f080020;
-        public static final int tv_custom_song_name=0x7f08001e;
-        public static final int tv_custom_song_singer=0x7f08001d;
-        public static final int tv_custom_time=0x7f080016;
-        public static final int tv_custom_title=0x7f080015;
+        public static final int tv_custom_content=0x7f08001a;
+        public static final int tv_custom_progress_status=0x7f080024;
+        public static final int tv_custom_progress_title=0x7f080023;
+        public static final int tv_custom_song_name=0x7f080021;
+        public static final int tv_custom_song_singer=0x7f080020;
+        public static final int tv_custom_time=0x7f080019;
+        public static final int tv_custom_title=0x7f080018;
         public static final int urlImag=0x7f080010;
     }
     public static final class layout {
